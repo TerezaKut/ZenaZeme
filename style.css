@@ -1,0 +1,1424 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/* google elementy */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+body {
+    font-family: 'Karma', serif;
+	font-size: 15px;
+	line-height: 1.75;
+	margin:0 0;
+}
+
+.stranka {
+    margin-left:auto;
+    margin-right:auto;
+    width:1100px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	}
+
+header {
+    display: flex;
+    flex-direction:column;
+
+    /* border: 3px solid yellow; */
+}
+
+.menu {
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width:100%;
+    /* border: 3px solid green; */
+}
+
+.menu-polozka {
+    flex-grow:1;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    padding: 20px 10px;
+    /* border: 3px solid red; */
+
+    color: #000000;
+}
+
+.nadpis {
+    flex-grow:3;
+    height: 130px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    padding:0 40px;
+    margin:0;
+    /* border: 3px solid red; */
+}
+
+.obrazek {
+    flex: 0 1 auto;
+    position:relative;
+    background-image: url("pic/titulni.jpg");
+    width:100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    /* border: 3px solid blue; */
+}
+
+.titulni_obrazek {
+    width:90%;
+    /* border: 3px solid yellow; */
+}
+
+footer {
+    margin-top: 8%;
+    width:100%;
+    background-color:#618D02;
+}
+
+
+/* Odstavce */
+.nastred {
+    text-align: center;
+    /* border: 3px solid yellow; */
+    margin:40px 20px 30px 20px;
+}
+
+
+/* Texty */
+.zenazeme {
+    font-family: 'Karma';
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    height: 50px;
+    margin:0;
+    padding:0;
+    color: #B10D3E;
+    /* border: 3px solid violet; */
+}
+
+h2 {
+    font-family: 'Karma';
+    font-style: Bold;
+    font-weight: 700;
+    font-size: 30px;
+    color: #B10D3E;
+    /* border: 3px solid orange; */
+    margin:0;
+    padding:0;
+}
+
+.navigace {
+    color: #618D02;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.petra {
+    font-family: 'Karma';
+    font-style: Bold;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    margin:0;
+    padding:0;
+    /* border: 3px solid saddlebrown   ; */
+}
+
+.podtitul {
+    font-size: 20px;
+    font-weight: 800;
+    padding:0;
+    margin:0;
+}
+
+.zelene {
+    color: #89C013;
+
+}
+
+.cervene {
+    color: #B10D3E;
+
+}
+
+.kapitalky {
+    text-transform: uppercase;
+    /* text-align: center; */
+    color:#373737;
+    font-weight: 700;
+
+}
+
+.popis_stred {
+    width: 700px;
+    /* border: 3px solid orange; */
+}
+
+.patickapolozka {
+    display:flex;
+	top:15px;
+	vertical-align: center;
+	color: white;
+	padding:10px;
+
+}
+
+.patickasloupce {
+
+}
+
+.paticka_copy {
+    width:50%;
+}
+
+.paticka_webdesign {
+    width:50%;
+    text-align: right;
+}
+
+.motto {
+    position: absolute;
+    width: 250px;
+    height: 198px;
+    left: 6%;
+    top: 15%;
+
+    font-family:'Courgette',monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.dole-okraj {
+    padding-bottom: 30px;
+    /* border: 3px solid blue;  */
+
+}
+
+.pisnicka {
+    width:100%;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    /* margin:10px; */
+    align-items: center;
+    justify-content: center;
+    /* border: 3px solid blue;  */
+}
+
+.pisnicka-text {
+    /* padding-right:5px; */
+}
+
+.pisnicka_stred {
+
+    justify-content:center;
+
+}
+
+.pisnicka_nazev {
+    padding:1% 1% 1% 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    /* border: 3px solid orange; */
+
+}
+.pisnicka_prehravac {
+    /* border: 3px solid green;  */
+
+}
+section {
+    margin-top: 50px;
+}
+
+.sede {
+    background-color: #EFECEC;
+}
+
+.oranzova {
+    background-color: #FFF4F2;
+}
+
+.zelena {
+    background-color: #F3FFEE;
+}
+
+.ruzova {
+    background-color: #FFEDF8;
+}
+
+.zeleny_nadpis {
+    width:100%;
+    color:#618D02;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 40px 20px 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* border: 3px solid green; */
+
+}
+
+.cd {
+    display:flex;
+    /* border: 3px solid yellow; */
+    background-color: #FFF4F2;
+    /* background-color: #F7FFE6; */
+}
+
+.cd_obrazek {
+    width: 40%;
+    /* margin: 5% 5%; */
+    /* border: 3px solid green; */
+}
+
+.cd_text {
+    /* border: 3px solid blue; */
+    margin: 5%;
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+.cd_uvod {
+    font-size: 25px;
+    margin:10px;
+    color:#618D02;
+    font-weight: 600;
+    /* border: 3px solid blue; */
+}
+
+.cervene_velke {
+    text-transform:uppercase;
+    color:#B10D3E;
+    font-weight: 900;
+    font-size: 30px;
+    margin:10px;
+    /* border: 3px solid blue; */
+}
+
+.cd_popis {
+    margin: 15px;
+}
+
+.tlacitko {
+    border: 1px solid #618D02;
+    color:#618D02;
+    background-color: white;
+    width:140px;
+    padding:6px 5px;
+    margin: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-family: Inter;
+}
+
+.bezpatkove {
+    font-family: 'Inter', sans-serif;
+}
+
+.tlacitko:hover {
+    color: white;
+    background-color: #618D02;
+}
+
+.tlacitko-zelene {
+    color: white;
+    background-color: #618D02;
+}
+
+.reference {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reference_text {
+    font-style: italic;
+    /* border: 3px solid #618D02; */
+
+}
+
+.reference_jmeno {
+    color:#618D02;
+    font-weight:600 ;
+    padding-top: 10px;
+}
+
+.reference_jm2 {
+    color:grey;
+    font-style: italic;
+    font-weight:600 ;
+}
+
+.reference_karta {
+    display:flex;
+    /* border: 3px solid orange; */
+
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin:10px;
+    padding:15px;
+    border-radius: 10px;
+    width:30%;
+    background-color:white;
+}
+
+.reference_karta_1 {
+    display:flex;
+    /* border: 3px solid orange; */
+
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin:10px;
+    padding:15px;
+    width:85%;
+    border-radius: 10px;
+
+    background-color:white;
+
+}
+
+.reference_tlacitko {
+    padding: 20px;
+}
+
+.nabidka {
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cervena {
+    color:#B10D3E;
+    font-size:18px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.seda {
+    color: #373737;
+    font-weight:bold;
+}
+
+.nabidka-okno {
+    display: flex;
+    margin-top:30px;
+    flex-direction: column;
+    flex-basis: 30%;
+    align-items: center;
+
+}
+
+
+.nabidka-text {
+}
+
+.nabidka-foto {
+    width: 180px;
+    height: 180px;
+    border-radius: 80px;
+    background-size: cover;
+    background-position: center center;
+    margin:10px;
+
+}
+
+.foto1 {
+    background-image: url("pic/18_web.jpg");
+}
+
+.foto2 {
+    background-image: url("pic/57_web.jpg");
+}
+
+.foto3 {
+    background-image: url("pic/23_web.jpg");
+}
+
+.foto4 {
+    background-image: url("pic/25_web.jpg");
+}
+
+.foto5 {
+    background-image: url("pic/39_web.jpg");
+    background-size: 120%;
+    background-position: top center ;
+
+}
+.foto6 {
+    background-image: url("pic/28_web.jpg");
+}
+
+.foto-srdce {
+    background-image: url("pic/srdce.jpg");
+}
+
+.foto-kalim{
+    background-image: url("pic/06_web.jpg");
+}
+
+.foto-koshi{
+    background-image: url("pic/10_web.jpg");
+}
+
+.cd1-predek {
+    background-image: url("pic/CD1-predek.png");
+}
+
+.cd1-zadek {
+    background-image: url("pic/CD1-zadek.png");
+}
+
+.cd1-predek:hover {
+    background-image: url("pic/CD1-zadek.png");
+
+}
+
+.cd2-predek {
+    background-image: url("pic/CD2-predek.png");
+}
+
+.cd2-zadek {
+    background-image: url("pic/CD2-zadek.png");
+}
+
+.cd2-predek:hover {
+    background-image: url("pic/CD2-zadek.png");
+
+}
+
+.omne {
+    display:flex;
+            /* border: 3px solid yellow; */
+
+}
+
+.omne-obrazek {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    /* margin: 20px; */
+
+    background-image: url("pic/20_web.jpg")
+}
+
+.omne-pulka {
+    /* width:40%; */
+    margin:10px;
+}
+.omne-druha {
+    margin:20px 30px 0px 30px;
+}
+
+.doleva {
+    text-align:left;
+    padding:0;
+    margin-top:20px;
+}
+
+.stred {
+        /* border: 3px solid yellow; */
+    width:100%;
+    text-align: center;
+}
+
+.omne-tlacitko {
+    /* width:100%; */
+
+    /* border: 3px solid yellow; */
+    margin-top: 15px;
+}
+
+.omne-text {
+    font-size: 18px;
+    margin-right:10px;
+}
+
+.blog-obr-pole{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    text-align:center;
+        /* border: 3px solid orange; */
+
+}
+
+.blog-obrazek {
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    background-position: center center;
+    margin: 20px;
+    /* border: 3px solid orange; */
+    background-image: url("pic/20_web.jpg")
+}
+
+.blog-tlacitko {
+    padding-bottom: 30px;
+    /* border: 3px solid orange; */
+
+}
+
+.blog-obrazek{
+            /* border: 3px solid orange; */
+
+}
+
+.blog-nazev {
+    text-transform: uppercase;
+    font-size:15px;
+    font-weight: 800;
+    color:#618D02;
+    text-align:center;
+}
+
+.blog {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.posledni {
+    margin-bottom: 50px;
+        /* border: 3px solid orange; */
+
+}
+
+.odkaz{
+    font-size:20px;
+    color:#B10D3E;
+    font-weight: 600;
+}
+
+.popis-vetsi {
+    font-size:18px;
+
+}
+
+/* O MNE */
+
+.obdelnik {
+    background-color:#FFF4F2;
+    /* border: 3px solid orange; */
+    width:100%;
+    margin:20px 0;
+    text-align:center;
+    font-size:20px;
+}
+
+.sekce {
+    margin-top:2%;
+    display: flex;
+    /* border: 3px solid green; */
+
+}
+
+.sekce_popis {
+    font-size: 18px;
+    margin-top:30px;
+    margin-left:30px;
+    margin-right:30px;
+    /* border: 3px solid blue; */
+
+}
+
+.sekce_popis_bez_nadpisu {
+    font-size: 18px;
+    margin-left:30px;
+    margin-right:30px;
+    /* border: 3px solid blue; */
+}
+
+
+.sekce_text {
+    margin-top:2%;
+    margin-left:2%;
+}
+
+.text_zuzeny {
+    padding-right:30px;
+    padding-left:30px;
+}
+
+.sekce_obrazek {
+    width: 40%;
+    align-content: 'center';
+    /* border: 3px solid yellowgreen; */
+
+}
+
+.cd_obrazek {
+    width: 50%;
+    align-content: 'center';
+    /* border: 3px solid yellowgreen; */
+
+}
+
+
+
+.nadpis-cerveny {
+    color:#B10D3E;
+    margin-top:5%;
+    text-align:center;
+}
+
+.nadpis-ramecek {
+    text-align:center;
+    padding-top:30px;
+}
+
+.obrazek-obecne
+ {
+    flex-grow:1 1 auto;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    margin:10px;
+
+    /* border: 3px solid orange; */
+}
+
+.obrazek-obecne-vetsi
+ {
+    flex-grow:1 1 auto;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    margin:10px;
+
+    /* border: 3px solid orange; */
+}
+
+.obrazek-cd
+ {
+    flex-grow:1 1 auto;
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    margin:10px;
+
+    /* border: 3px solid orange; */
+}
+
+.obrazek-obecne-mensi
+ {
+    flex-grow:1 1 auto;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    margin:20px;
+ 
+    /* border: 3px solid orange; */
+}
+
+
+.obrazek-kulaty{
+    border-radius: 50%;
+}
+
+.obrazek-omne {
+    background-image: url("pic/20_web.jpg");
+    background-position:top;
+}
+
+/* Tipy na fonty: Krimson (old school, uzemeni), Lora (zenske), Amiri (jemne, soucitne), Spectral (specialni, krasna kurziva, pusobi jako osobnost), Una (kurzíva krásná, ženská - tučným kdyby byly nadpisy, tak by to mohlo vypadat dobře), DM Serif text (krásná kurzíva s linkami)  
+Ilustrace: pepeta.cz
+Pro Julku: Italiano*/
+
+.sekce_popis {
+    width:60%;
+    flex: 2 1 auto;
+    /* border: 3px solid blue; */
+
+}
+
+.pruvodci {
+    display:flex;
+    flex-direction: row;
+    /* border: 3px solid blue; */
+}
+
+.pruvodci-popis {
+    margin-left:10px;
+}
+
+.pruvodci-jmeno {
+    flex:0 1 20%;
+    /* border: 3px solid green; */
+
+}
+
+.odkaz-cerveny {
+    color:#B10D3E;
+    font-weight: bold;
+}
+
+.doprovazim_aktivity {
+    margin: 10px 20px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+        /* border: 3px solid green; */
+
+}
+.pisnicka-text-pokus {
+    display: flex;
+}
+
+.text-audio {
+    padding-right: 20px;
+}
+
+.doprovazim_obr_text {
+        display:flex;
+        flex-direction: column;
+        flex: 1 1 30%;
+        /* border: 1px solid #618D02; */
+        text-align:center;
+        align-items: center;
+        margin:10px;
+        padding: 20px 0;
+        border-radius: 5px;
+
+}
+
+.doprovazim_obr {
+    display:flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center center;
+    margin:10px;
+    height:150px;
+    width: 150px;
+    /* border-radius: 60%; */
+    /* border: 2px dotted #618D02; */
+    color: #EFECEC;
+    /* filter: brightness(70%); */
+
+}
+
+.foto-zive {
+    background-image: url("pic/1.png");
+
+}
+
+.foto-workshop {
+    background-image: url("pic/7.png");
+}
+
+.foto-elementy {
+    background-image: url("pic/4.png");
+
+}
+.foto-deloha {
+    background-image: url("pic/5.png");
+}
+
+.foto-kolo {
+    background-image: url("pic/4.png");
+}
+
+.foto-cviceni {
+    background-image: url("pic/8.png");
+}
+
+.foto-lazne {
+    background-image: url("pic/10.png");
+}
+
+.foto-cd {
+    background-image: url("pic/cd.png");
+}
+.foto-zivly {
+    background-image: url("pic/elementy.png");
+}
+.foto-zeme {
+    background-image: url("pic/zemi.png");
+}
+.foto-obrady {
+    background-image: url("pic/obrady.png");
+}
+.foto-nove {
+    background-image: url("pic/kalimba.png");
+}
+.foto-menstruace {
+    background-image: url("pic/menstruace.png");
+}
+
+.foto-nastroje {
+    background-image: url("pic/01_web.jpg");
+}
+
+.foto-kalimba {
+    background-image: url("pic/06_web.jpg");
+}
+
+.foto-koshi {
+    background-image: url("pic/10_web.jpg");
+}
+
+.doprovazim_akce {
+    width:100%;
+    text-align:center;
+    /* background-color:#618D02; */
+    /* border: 2px solid #618D02; */
+    font-size:x-large;
+    /* text-decoration: underline; */
+    font-weight: 800;
+    color:#B10D3E;
+
+    padding:5px 0;
+    /* border-radius: 5px; */
+
+}
+
+.doprovazim_akce:hover {
+    /* color: white; */
+    /* background-color: #618D02; */
+}
+
+.doprovazim_popis {
+    color:#373737;
+    text-align:left;
+    font-size: large;
+        /* border: 2px solid #618D02; */
+
+}
+
+ul {
+    margin:0;
+    /* color:#B10D3E; */
+    list-style-type: circle;
+}
+
+.otazky-left {
+    font-size:20px;
+    text-align: left;
+}
+
+.otazky-center {
+    font-size:20px;
+    text-align: center;
+    margin:30px;
+}
+
+.seznam {
+    margin: 20px 30px 30px 30px;
+    font-size: 18px;
+    line-height: 2;
+        /* border: 2px solid #618D02; */
+
+
+}
+
+.cviceni-tabulka {
+    display: flex;
+    width:100%;
+}
+
+.cviceni-jak {
+    flex: 1 1 50%;
+    margin-right:2%;
+    padding: 2%;
+    border: 3px solid #618D02;
+    border-radius: 5px;
+
+}
+
+.cviceni-nadpis {
+    text-align: center;
+}
+
+.cviceni-ucitele {
+    padding: 10px 30px 40px 30px;
+}
+
+
+.text-otazky {
+    padding: 1% 2% 2% 2%;
+    /* border: 2px solid #618D02; */
+}
+
+.info-ritual {
+    display:flex;
+    padding: 0 30px 30px 30px;
+        /* border: 2px solid #618D02; */
+
+}
+
+.ritual-sloupec {
+    flex-basis: 50%;
+    margin: 0 30px;
+        /* border: 2px solid red; */
+
+}
+
+.sekce-ritual {
+    margin: 40px;
+}
+
+.ritual-text {
+    font-size:18px;
+    margin: 30px 30px 0 30px;
+}
+
+.zelene-podtrzene {
+    text-decoration: underline ;
+    font-weight: 800;
+    color:#618D02;
+}
+.zelene-2 {
+    
+    font-weight: 800;
+    color:#618D02;
+}
+
+.cervene-podtrzene {
+    text-decoration: underline ;
+    font-weight: 800;
+    color: #B10D3E;
+}
+
+.banner-otazky {
+    display: flex;
+    align-items: flex-start;
+        /* border: 2px solid #618D02; */
+
+}
+
+.obr-chlivek {
+
+    /* border: 2px solid yellow; */
+
+}
+.obrazek-otazky {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 30px;
+    border-radius: 50%;
+}
+
+.ucitele {
+    margin-left: 20px;
+    padding-top:20px;
+}
+
+.odsazene {
+    margin-bottom: 20px;
+}
+
+.odsazene-zvrchu {
+    margin-top: 20px;
+}
+
+.odsazene-zleva {
+    margin-left: 20px;
+}
+
+.odsazene-zboku {
+    margin-left:30px;
+    margin-right:30px;
+}
+
+.odsazene-padding {
+    padding-bottom: 25px;
+}
+
+.ritual-pulka {
+    width:30%;
+    /* margin:30px 0px 0px 30px; */
+        /* border: 2px solid yellow; */
+
+}
+.ritual-druha {
+    /* margin:30px 30px 0px 30px; */
+            /* border: 2px solid yellow; */
+
+}
+
+h4 {
+    color:#B10D3E;
+
+}
+
+.vyrazne {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.ritual-nadpis {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color:#B10D3E;
+    margin-top:20px;
+}
+
+.ritual-poznamka {
+    font-size: 13px;
+}
+
+.seda {
+    color:#373737;
+}
+
+.cviceni-uvod {
+    display: flex;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.cviceni-prvni {
+    flex-basis: 60%;
+    margin: 0 30px;
+}
+
+.zelene-velke {
+    font-size: 20px;
+    color:#618D02;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cviceni-popis {
+    font-size: 18px;
+    margin: 20px 20px;
+    text-align: center;
+}
+
+.cviceni-banner {
+    padding: 10px 30px 30px 30px;
+    margin:20px;
+}
+
+.cara {
+    margin:30px auto;
+        /* border: 2px solid yellow; */
+}
+
+.ruda {
+    color: red;
+    font-size: 25px;
+}
+
+.obrazek-ctvrtina {
+    width:22%;
+}
+
+.rada-obrazku {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.rada-obrazku {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.zelena-tabulka {
+    padding: 0 0 20px 0;
+        /* border: 3px solid green; */
+
+}
+
+.hudba_aktivity {
+    margin: 10px 20px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+        /* border: 3px solid green; */
+
+}
+
+.hudba_obr_text {
+        display:flex;
+        flex-direction: column;
+        flex: 1 1 30%;
+        /* border: 1px solid #618D02; */
+        text-align:center;
+        align-items: center;
+        margin:5px;
+        padding: 10px 0;
+        border-radius: 5px;
+        /* border: 3px solid yellow; */
+
+
+}
+
+.hudba_obr {
+    display:flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center center;
+    margin:5px;
+    height:200px;
+    width: 200px;
+    /* border-radius: 60%; */
+    /* border: 2px dotted #618D02; */
+    color: #EFECEC;
+    /* filter: brightness(70%); */
+
+}
+
+.hudba_akce {
+    width:100%;
+    text-align:center;
+    /* background-color:#618D02; */
+    /* border: 2px solid red; */
+    font-size:x-large;
+    /* text-decoration: underline; */
+    font-weight: 800;
+    color:#B10D3E;
+
+    padding:5px 0;
+    /* border-radius: 5px; */
+
+}
+
+._hudba_akce:hover {
+    /* color: white; */
+    /* background-color: #618D02; */
+}
+
+.hudba_popis {
+    color:#373737;
+    font-weight: bold;
+    text-align:left;
+    font-size: large;
+        /* border: 2px solid #618D02; */
+
+}
+
+.seznam-hudba {
+    display:flex;
+    flex-direction: column;
+    margin: 0 30px 30px 30px;
+    font-size: 18px;
+    line-height: 2;
+        /* border: 2px solid #618D02; */
+
+
+}
+
+.nastroje {
+    display:flex;
+    margin-top:30px;
+    /* border: 2px solid red; */
+
+}
+
+.nastroje-bunka {
+    display:flex;
+    flex-basis: 33.3%;
+    flex-direction: column;
+    align-items: center;
+
+    /* border: 2px solid blue; */
+
+}
+
+.nastroje-nazev {
+    width:100%;
+    text-align:center;
+    /* background-color:#618D02; */
+    /* border: 2px solid #618D02; */
+    font-size:x-large;
+    font-weight: 800;
+    color:#B10D3E;
+}
+
+.nastroje-popis {
+    margin:10px 40px;
+}
+
+.obrazek-siroky {
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    margin:10px;
+
+    /* border: 3px solid orange; */
+}
+
+.skladby_seznam {
+    width:100%;
+    display:flex;
+    font-family: 'Inter', sans-serif;
+    /* border: 3px solid blue; */
+
+
+}
+
+.skladby_sloupec {
+    flex-basis: 50%;
+    font-size:large;
+        /* border: 3px solid orange; */
+
+}
+
+.cd_popisek {
+    width: 50%;
+    /* border: 3px solid blue; */
+}
+
+.cd-nadpis {
+    margin: 20px 10px;
+}
+
+.tlacitka-cd {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+        /* border: 3px solid blue; */
+}
+
+.videa {
+    display: flex;
+}
+
+.jedno_video {
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+}
+
+.video_popis {
+    text-align: center;
+    font-size:x-large;
+}
+
+.mezera-button1 {
+    margin-top: 50px;
+
+}
+
+.mezera-button2{
+    margin-top: 30px;
+
+}
+
+.cd-vznik {
+    display:flex;
+    justify-content: center;
+}
+
+.cd-kratke {
+    flex-basis:20%;
+    background-color: white;
+    margin:10px;
+    padding:10px;
+    font-size: smaller;
+    border-radius: 5%;
+}
+
+.grid {
+    display:grid;
+    column-gap: 10px;
+    grid-template-columns: 30px 1fr 1.5fr 2fr;
+    grid-template-rows: repeat(16, auto);
+    align-items:center;
+
+
+}
+
+.grid-prvni {
+    display:grid;
+    column-gap: 10px;
+    grid-template-columns: 30px 1fr 1.5fr 2fr;
+}
+
+.poradi {
+    /* border: 3px solid blue; */
+    justify-self:end;
+
+}
+
+.poradi:hover {
+    font-size: 30px;
+    background-image: "pic/play-green.png" ;
+}
+
+.ikony-prehravac {
+    width:20px;
+    margin:3px;
+    justify-self:end;
+}
+
+.text-pisne {
+    align-self:start;
+    /* visibility: hidden; */
+}
+
+/* .text-pisne::first-line {
+    visibility: visible;
+} */
+
+.item {
+    /* border: 3px solid green; */
+
+}
+/* .item:hover {
+
+    background-color: lightgrey;
+} */
+
+.nazev-pisne {
+    font-size: large;
+    font-weight: bold;
+}
+
+.popisek-pisne {
+    justify-self: end;
+}
+
+label {
+    display: block;
+    width:150px;
+}
+
+.formular {
+    display:flex;
+    flex-direction: column;
+    /* border: 3px solid green; */
+    /* align-items: center; */
+}
